@@ -1,8 +1,7 @@
 <?php
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-//added by SHivam for testy
-// line to 2sdsas
+
 // Enable error reporting for debugging during installation
 //error_reporting(E_ALL);
 //ini_set('display_errors', 1);
