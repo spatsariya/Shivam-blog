@@ -1,9 +1,9 @@
 <?php
-// Remove extraction of "id" and only grab the slug from the query string
-$slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
+// Extract ID and slug from query string
+$post_id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
+$slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 
-// If no slug is provided then error out
-if (empty($slug)) {
+if (!$post_id || !$slug) {
     http_response_code(404);
     include '404.php';
     exit;
@@ -13,15 +13,25 @@ include 'config.php';
 include 'includes/functions.php';
 
 try {
+    // Get identifier from URL - could be either slug or ID
+    $identifier = isset($_GET['slug']) ? $_GET['slug'] : (isset($_GET['id']) ? $_GET['id'] : '');
+
     // Debug logging
-    debug_log('Post page accessed with slug: ' . $slug);
+    debug_log('Post page accessed with identifier: ' . $identifier);
 
-    // Get the post using the slug
-    $post = get_post_by_slug($slug);
+    // If no identifier provided, redirect to homepage
+    if (empty($identifier)) {
+        debug_log('No identifier provided, redirecting to homepage');
+        header('Location: /');
+        exit;
+    }
 
-    // Debug logging and error handling
+    // Get the post
+    $post = get_post_by_slug($identifier);
+
+    // Debug logging
     if (!$post) {
-        debug_log('No post found for slug: ' . $slug);
+        debug_log('No post found for identifier: ' . $identifier);
         throw new Exception('Post not found');
     }
 
@@ -54,6 +64,7 @@ try {
 
     include 'includes/header.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -211,7 +222,7 @@ try {
                     console.log('Thanks for sharing!');
                 }).catch(console.error);
             } else {
-                // Fallback for unsupported browsers
+                // Fallback for browsers that don't support navigator.share
                 prompt('Copy this link to share:', window.location.href);
             }
         });
@@ -234,7 +245,7 @@ try {
                             '<span class="font-bold">' + response.comment.name + '</span>' +
                             '<span class="text-sm text-gray-500">' + response.comment.created_at + '</span>' +
                             '</div>' +
-                            '<p>' + response.comment.content + '</p>' +
+                            '<p>' + response.comment.content + '</p>' + // Use pre-formatted content
                             '</div>'
                         );
                         // Clear the form
@@ -248,7 +259,7 @@ try {
                     }
                 },
                 error: function(xhr, status, error) {
-                    console.error('AJAX error:', xhr.responseText);
+                    console.error('AJAX error:', xhr.responseText); // Log the full error response
                     alert('An error occurred while submitting the comment. Please check the console for details.');
                 }
             });
@@ -269,3 +280,4 @@ try {
     exit;
 }
 ?>
+
