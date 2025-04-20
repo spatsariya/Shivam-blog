@@ -121,5 +121,58 @@ include 'includes/header.php';
 </body>
 </html>
 
+if ($posts) {
+    ?>
+    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <?php foreach ($posts as $post): 
+            $post_categories = get_post_categories($post['id']);
+            $first_image = get_first_image_url($post['content']); // Ensure this is called correctly
+        ?>
+            <article class="bg-white rounded-lg shadow-md overflow-hidden transition-transform duration-300 hover:-translate-y-1">
+                <?php if ($first_image): ?>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <img 
+                            src="<?php echo htmlspecialchars($first_image); ?>" 
+                            alt="<?php echo htmlspecialchars($post['title']); ?>"
+                            class="object-cover w-full h-48"
+                        >
+                    </div>
+                <?php endif; ?>
+                
+                <div class="p-6">
+                    <!-- Categories -->
+                    <?php if (!empty($post_categories)): ?>
+                        <div class="flex flex-wrap gap-2 mb-3">
+                            <?php foreach ($post_categories as $cat): ?>
+                                <a 
+                                    href="/category/<?php echo $cat['id']; ?>"
+                                    class="text-xs font-semibold bg-blue-100 text-blue-600 px-2 py-1 rounded-full hover:bg-blue-200 transition-colors"
+                                >
+                                    <?php echo htmlspecialchars($cat['name']); ?>
+                                </a>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
+
+                    <!-- Title -->
+                    <h2 class="text-2xl font-semibold mb-3 text-gray-900 hover:text-blue-600 transition-colors">
+                        <a href="/post/<?php echo $post['slug']; ?>">
+                            <?php echo htmlspecialchars($post['title']); ?>
+                        </a>
+                    </h2>
+
+                    <!-- Excerpt -->
+                    <p class="text-gray-600 mb-4">
+                        <?php echo wp_trim_words(htmlspecialchars($post['content']), 30); ?>
+                    </p>
+                </div>
+            </article>
+        <?php endforeach; ?>
+    </div>
+    <?php
+} else {
+    echo 'No posts found.';
+}
+
 <?php include 'includes/footer.php'; ?>
 
