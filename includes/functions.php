@@ -20,7 +20,6 @@ function get_posts($limit = 10) {
     return $result->fetch_all(MYSQLI_ASSOC);
 }
 
-<?php
 function get_first_image_url($content) {
     $first_img = '';
     $output = preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches);
