@@ -1,46 +1,38 @@
 <?php
-include 'config.php';
-include 'includes/functions.php';
+// Remove extraction of "id" and only grab the slug from the query string
+$slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
 
-// Extract the slug from the URL
-$slug = '';
-if (isset($_GET['slug']) && !empty(trim($_GET['slug']))) {
-    $slug = trim($_GET['slug']);
-} else {
-    // Fallback: parse REQUEST_URI. Assuming URL structure like: /post/{slug}
-    $uri_parts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-    if (!empty($uri_parts) && $uri_parts[0] === 'post' && isset($uri_parts[1])) {
-        $slug = trim($uri_parts[1]);
-    }
-}
-
-// If no slug is provided, show 404
+// If no slug is provided then error out
 if (empty($slug)) {
     http_response_code(404);
     include '404.php';
     exit;
 }
 
+include 'config.php';
+include 'includes/functions.php';
+
 try {
     // Debug logging
     debug_log('Post page accessed with slug: ' . $slug);
 
-    // Retrieve the post using the slug
+    // Get the post using the slug
     $post = get_post_by_slug($slug);
 
+    // Debug logging and error handling
     if (!$post) {
         debug_log('No post found for slug: ' . $slug);
         throw new Exception('Post not found');
     }
 
-    // Increment view count (non-critical)
+    // Increment view count - don't throw if this fails
     increment_post_view_count($post['id']);
 
-    // Retrieve post metadata
+    // Get post metadata
     $post_categories = get_post_categories($post['id']);
     $category_names = array_column($post_categories, 'name');
 
-    // Get post image (if any)
+    // Get post image
     $post_image = get_post_image($post);
 
     // Get engagement counts
@@ -49,7 +41,7 @@ try {
     $post['like_count'] = $engagement['like_count'];
     $post['comment_count'] = $engagement['comment_count'];
 
-    // Get adjacent posts
+    // Get next and previous posts
     $next_post = get_adjacent_post($post['id'], 'next');
     $prev_post = get_adjacent_post($post['id'], 'prev');
 
@@ -57,7 +49,7 @@ try {
     $page_title = !empty($post['meta_title']) ? $post['meta_title'] : $post['title'];
     $page_description = !empty($post['meta_description']) ? $post['meta_description'] : get_excerpt($post['content'], 160);
 
-    // Get comments for the post
+    // Get comments
     $comments = get_post_comments($post['id']);
 
     include 'includes/header.php';
@@ -232,9 +224,10 @@ try {
                 url: '/ajax/add_comment.php',
                 type: 'POST',
                 data: $(this).serialize(),
-                dataType: 'json',
+                dataType: 'json', // Explicitly set dataType to json
                 success: function(response) {
                     if (response.success) {
+                        // Add the new comment to the list
                         $('#commentsList').prepend(
                             '<div class="bg-gray-50 p-4 rounded-lg mb-4">' +
                             '<div class="flex justify-between items-center mb-2">' +
@@ -244,7 +237,9 @@ try {
                             '<p>' + response.comment.content + '</p>' +
                             '</div>'
                         );
+                        // Clear the form
                         $('#commentForm')[0].reset();
+                        // Update comment count
                         var currentCount = parseInt($('.comment-count').text().split(' ')[0]);
                         $('.comment-count').text((currentCount + 1) + ' comments');
                     } else {
@@ -267,13 +262,10 @@ try {
 } catch (Exception $e) {
     // Log the error
     error_log("Error in post.php: " . $e->getMessage());
-
+    
     // Show 404 page
     header("HTTP/1.0 404 Not Found");
     include '404.php';
     exit;
 }
 ?>
-
-
-
