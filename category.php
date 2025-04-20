@@ -16,6 +16,10 @@ if (!empty($category_ids)) {
     }
 }
 
+<?php
+include 'path/to/your/function_file.php'; // Adjust the path according to where your functions are stored
+
+
 // Remove duplicate posts
 $posts = array_unique($posts, SORT_REGULAR);
 
