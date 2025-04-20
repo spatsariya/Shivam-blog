@@ -1,48 +1,46 @@
 <?php
-// Extract ID and slug from query string
-$post_id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
-$slug = isset($_GET['slug']) ? $_GET['slug'] : '';
+include 'config.php';
+include 'includes/functions.php';
 
-if (!$post_id || !$slug) {
+// Extract the slug from the URL
+$slug = '';
+if (isset($_GET['slug']) && !empty(trim($_GET['slug']))) {
+    $slug = trim($_GET['slug']);
+} else {
+    // Fallback: parse REQUEST_URI. Assuming URL structure like: /post/{slug}
+    $uri_parts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
+    if (!empty($uri_parts) && $uri_parts[0] === 'post' && isset($uri_parts[1])) {
+        $slug = trim($uri_parts[1]);
+    }
+}
+
+// If no slug is provided, show 404
+if (empty($slug)) {
     http_response_code(404);
     include '404.php';
     exit;
 }
 
-include 'config.php';
-include 'includes/functions.php';
-
 try {
-    // Get identifier from URL - could be either slug or ID
-    $identifier = isset($_GET['slug']) ? $_GET['slug'] : (isset($_GET['id']) ? $_GET['id'] : '');
-
     // Debug logging
-    debug_log('Post page accessed with identifier: ' . $identifier);
+    debug_log('Post page accessed with slug: ' . $slug);
 
-    // If no identifier provided, redirect to homepage
-    if (empty($identifier)) {
-        debug_log('No identifier provided, redirecting to homepage');
-        header('Location: /');
-        exit;
-    }
+    // Retrieve the post using the slug
+    $post = get_post_by_slug($slug);
 
-    // Get the post
-    $post = get_post_by_slug($identifier);
-
-    // Debug logging
     if (!$post) {
-        debug_log('No post found for identifier: ' . $identifier);
+        debug_log('No post found for slug: ' . $slug);
         throw new Exception('Post not found');
     }
 
-    // Increment view count - don't throw if this fails
+    // Increment view count (non-critical)
     increment_post_view_count($post['id']);
 
-    // Get post metadata
+    // Retrieve post metadata
     $post_categories = get_post_categories($post['id']);
     $category_names = array_column($post_categories, 'name');
 
-    // Get post image
+    // Get post image (if any)
     $post_image = get_post_image($post);
 
     // Get engagement counts
@@ -51,7 +49,7 @@ try {
     $post['like_count'] = $engagement['like_count'];
     $post['comment_count'] = $engagement['comment_count'];
 
-    // Get next and previous posts
+    // Get adjacent posts
     $next_post = get_adjacent_post($post['id'], 'next');
     $prev_post = get_adjacent_post($post['id'], 'prev');
 
@@ -59,12 +57,11 @@ try {
     $page_title = !empty($post['meta_title']) ? $post['meta_title'] : $post['title'];
     $page_description = !empty($post['meta_description']) ? $post['meta_description'] : get_excerpt($post['content'], 160);
 
-    // Get comments
+    // Get comments for the post
     $comments = get_post_comments($post['id']);
 
     include 'includes/header.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -222,7 +219,7 @@ try {
                     console.log('Thanks for sharing!');
                 }).catch(console.error);
             } else {
-                // Fallback for browsers that don't support navigator.share
+                // Fallback for unsupported browsers
                 prompt('Copy this link to share:', window.location.href);
             }
         });
@@ -235,22 +232,19 @@ try {
                 url: '/ajax/add_comment.php',
                 type: 'POST',
                 data: $(this).serialize(),
-                dataType: 'json', // Explicitly set dataType to json
+                dataType: 'json',
                 success: function(response) {
                     if (response.success) {
-                        // Add the new comment to the list
                         $('#commentsList').prepend(
                             '<div class="bg-gray-50 p-4 rounded-lg mb-4">' +
                             '<div class="flex justify-between items-center mb-2">' +
                             '<span class="font-bold">' + response.comment.name + '</span>' +
                             '<span class="text-sm text-gray-500">' + response.comment.created_at + '</span>' +
                             '</div>' +
-                            '<p>' + response.comment.content + '</p>' + // Use pre-formatted content
+                            '<p>' + response.comment.content + '</p>' +
                             '</div>'
                         );
-                        // Clear the form
                         $('#commentForm')[0].reset();
-                        // Update comment count
                         var currentCount = parseInt($('.comment-count').text().split(' ')[0]);
                         $('.comment-count').text((currentCount + 1) + ' comments');
                     } else {
@@ -259,7 +253,7 @@ try {
                     }
                 },
                 error: function(xhr, status, error) {
-                    console.error('AJAX error:', xhr.responseText); // Log the full error response
+                    console.error('AJAX error:', xhr.responseText);
                     alert('An error occurred while submitting the comment. Please check the console for details.');
                 }
             });
@@ -273,11 +267,13 @@ try {
 } catch (Exception $e) {
     // Log the error
     error_log("Error in post.php: " . $e->getMessage());
-    
+
     // Show 404 page
     header("HTTP/1.0 404 Not Found");
     include '404.php';
     exit;
 }
 ?>
+
+
 
