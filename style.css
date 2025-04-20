@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  background: #f4f4f4;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+form {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+
+input[type="text"]#title {
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+textarea#content {
+  min-height: 400px;
+}
+
+input[type="submit"] {
+  background: #1a73e8;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #1557ad;
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.tox-tinymce {
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+

@@ -1,0 +1,4453 @@
+[2025-04-20 05:31:31] Starting get_homepage_sections() call
+[2025-04-20 05:31:31] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:31:31] Retrieved sections: Array
+(
+)
+
+[2025-04-20 05:31:58] Starting get_homepage_sections() call
+[2025-04-20 05:31:58] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:31:58] Retrieved sections: Array
+(
+)
+
+[2025-04-20 05:32:03] Starting get_homepage_sections() call
+[2025-04-20 05:32:03] Executing query: SELECT * FROM homepage_sections ORDER BY order_index ASC
+[2025-04-20 05:32:03] Retrieved sections: Array
+(
+)
+
+[2025-04-20 05:32:32] Starting get_homepage_sections() call
+[2025-04-20 05:32:32] Executing query: SELECT * FROM homepage_sections ORDER BY order_index ASC
+[2025-04-20 05:32:32] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+)
+
+[2025-04-20 05:32:34] Starting get_homepage_sections() call
+[2025-04-20 05:32:34] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:32:34] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+)
+
+[2025-04-20 05:32:34] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:32:34] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:33:03] Starting get_homepage_sections() call
+[2025-04-20 05:33:03] Executing query: SELECT * FROM homepage_sections ORDER BY order_index ASC
+[2025-04-20 05:33:03] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:33:05] Starting get_homepage_sections() call
+[2025-04-20 05:33:05] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:33:05] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:33:05] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:33:05] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:33:05] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:33:05] Error getting section posts: Unknown column 'is_featured' in 'WHERE'
+[2025-04-20 05:33:11] Starting get_homepage_sections() call
+[2025-04-20 05:33:11] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:33:11] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:33:11] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:33:11] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:33:11] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:33:11] Error getting section posts: Unknown column 'is_featured' in 'WHERE'
+[2025-04-20 05:46:57] Starting get_homepage_sections() call
+[2025-04-20 05:46:57] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:46:57] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:46:57] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:46:57] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:46:57] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:46:57] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 0
+)
+
+[2025-04-20 05:53:23] Starting get_homepage_sections() call
+[2025-04-20 05:53:23] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:53:23] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:53:23] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:53:23] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:53:23] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:53:23] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 4
+)
+
+[2025-04-20 05:53:23] Post image URL: /uploads/post_68048bcc7b3277.15757681.png
+[2025-04-20 05:53:23] Displaying image: /uploads/post_68048bcc7b3277.15757681.png
+[2025-04-20 05:53:23] Post image URL: /uploads/post_68048ba9338930.21356255.png
+[2025-04-20 05:53:23] Displaying image: /uploads/post_68048ba9338930.21356255.png
+[2025-04-20 05:53:23] Post image URL: /uploads/post_68048b071f0b61.45687069.png
+[2025-04-20 05:53:23] Displaying image: /uploads/post_68048b071f0b61.45687069.png
+[2025-04-20 05:53:23] Post image URL: /uploads/post_68048acdd1ee31.51815614.png
+[2025-04-20 05:53:23] Displaying image: /uploads/post_68048acdd1ee31.51815614.png
+[2025-04-20 05:53:47] Starting get_homepage_sections() call
+[2025-04-20 05:53:47] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:53:47] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:53:47] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:53:47] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:53:47] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:53:47] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 4
+)
+
+[2025-04-20 05:53:47] Post image URL: /uploads/post_68048bcc7b3277.15757681.png
+[2025-04-20 05:53:47] Displaying image: /uploads/post_68048bcc7b3277.15757681.png
+[2025-04-20 05:53:47] Post image URL: /uploads/post_68048ba9338930.21356255.png
+[2025-04-20 05:53:47] Displaying image: /uploads/post_68048ba9338930.21356255.png
+[2025-04-20 05:53:47] Post image URL: /uploads/post_68048b071f0b61.45687069.png
+[2025-04-20 05:53:47] Displaying image: /uploads/post_68048b071f0b61.45687069.png
+[2025-04-20 05:53:47] Post image URL: /uploads/post_68048acdd1ee31.51815614.png
+[2025-04-20 05:53:47] Displaying image: /uploads/post_68048acdd1ee31.51815614.png
+[2025-04-20 05:56:02] Starting get_homepage_sections() call
+[2025-04-20 05:56:02] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:56:02] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:56:02] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:56:02] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:56:02] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:56:02] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 05:56:02] Post image URL: /uploads/post_68048bcc7b3277.15757681.png
+[2025-04-20 05:56:02] Displaying image: /uploads/post_68048bcc7b3277.15757681.png
+[2025-04-20 05:56:15] Starting get_homepage_sections() call
+[2025-04-20 05:56:15] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:56:15] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:56:15] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:56:15] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:56:15] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:56:15] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 05:56:15] Post image URL: /uploads/post_68048bcc7b3277.15757681.png
+[2025-04-20 05:56:15] Displaying image: /uploads/post_68048bcc7b3277.15757681.png
+[2025-04-20 05:56:16] Starting get_homepage_sections() call
+[2025-04-20 05:56:16] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:56:16] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:56:16] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:56:16] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:56:16] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:56:16] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 05:56:16] Post image URL: /uploads/post_68048bcc7b3277.15757681.png
+[2025-04-20 05:56:16] Displaying image: /uploads/post_68048bcc7b3277.15757681.png
+[2025-04-20 05:56:28] Starting get_homepage_sections() call
+[2025-04-20 05:56:28] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:56:28] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:56:28] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:56:28] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:56:28] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:56:28] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 0
+)
+
+[2025-04-20 05:57:52] Starting get_homepage_sections() call
+[2025-04-20 05:57:52] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:57:52] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:57:52] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:57:52] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:57:52] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:57:52] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 05:57:52] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 05:57:52] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 05:59:32] Starting get_homepage_sections() call
+[2025-04-20 05:59:32] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 05:59:32] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 05:59:32] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 05:59:32] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 05:59:32] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 05:59:32] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 05:59:32] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 05:59:32] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:00:13] Starting get_homepage_sections() call
+[2025-04-20 06:00:13] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:00:13] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:00:13] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:00:13] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:00:13] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:00:13] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:00:13] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:00:13] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:00:15] Starting get_homepage_sections() call
+[2025-04-20 06:00:15] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:00:15] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:00:15] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:00:15] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:00:15] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:00:15] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:00:15] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:00:15] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:01:29] Starting get_homepage_sections() call
+[2025-04-20 06:01:29] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:01:29] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:01:29] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:01:29] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:01:29] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:01:29] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:01:29] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:01:29] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:02:21] Starting get_homepage_sections() call
+[2025-04-20 06:02:21] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:02:21] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:02:21] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:02:21] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:02:21] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:02:21] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:02:21] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:02:21] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:02:24] Starting get_homepage_sections() call
+[2025-04-20 06:02:24] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:02:24] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:02:24] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:02:24] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:02:24] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:02:24] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:02:24] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:02:24] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:03:09] Post page accessed with identifier: 
+[2025-04-20 06:03:09] No identifier provided, redirecting to homepage
+[2025-04-20 06:03:09] Starting get_homepage_sections() call
+[2025-04-20 06:03:09] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:03:09] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:03:09] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:03:09] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:03:09] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:03:09] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:03:09] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:03:09] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:03:15] Post page accessed with identifier: 
+[2025-04-20 06:03:15] No identifier provided, redirecting to homepage
+[2025-04-20 06:03:15] Starting get_homepage_sections() call
+[2025-04-20 06:03:15] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:03:15] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:03:15] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:03:15] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:03:15] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:03:15] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:03:15] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:03:15] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:03:20] Post page accessed with identifier: 
+[2025-04-20 06:03:20] No identifier provided, redirecting to homepage
+[2025-04-20 06:03:20] Starting get_homepage_sections() call
+[2025-04-20 06:03:20] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:03:20] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:03:20] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:03:20] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:03:20] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:03:20] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:03:20] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:03:20] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:03:41] Starting get_homepage_sections() call
+[2025-04-20 06:03:41] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:03:41] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:03:41] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:03:41] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:03:41] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:03:41] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:03:41] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:03:41] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:00] Starting get_homepage_sections() call
+[2025-04-20 06:06:00] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:00] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:00] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:00] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:00] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:00] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:00] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:00] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:25] Starting get_homepage_sections() call
+[2025-04-20 06:06:25] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:25] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:25] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:25] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:25] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:25] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:25] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:25] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:35] Post page accessed with identifier: 
+[2025-04-20 06:06:35] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:35] Starting get_homepage_sections() call
+[2025-04-20 06:06:35] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:35] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:35] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:35] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:35] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:35] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:35] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:35] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:37] Post page accessed with identifier: 
+[2025-04-20 06:06:37] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:37] Starting get_homepage_sections() call
+[2025-04-20 06:06:37] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:37] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:37] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:37] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:37] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:37] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:37] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:37] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:38] Post page accessed with identifier: 
+[2025-04-20 06:06:38] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:38] Starting get_homepage_sections() call
+[2025-04-20 06:06:38] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:38] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:38] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:38] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:38] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:38] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:38] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:38] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:39] Post page accessed with identifier: 
+[2025-04-20 06:06:39] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:39] Starting get_homepage_sections() call
+[2025-04-20 06:06:39] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:39] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:39] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:39] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:39] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:39] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:39] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:39] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:40] Post page accessed with identifier: 
+[2025-04-20 06:06:40] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:40] Starting get_homepage_sections() call
+[2025-04-20 06:06:40] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:40] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:40] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:40] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:40] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:40] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:40] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:40] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:41] Post page accessed with identifier: 
+[2025-04-20 06:06:41] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:41] Starting get_homepage_sections() call
+[2025-04-20 06:06:41] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:41] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:41] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:41] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:41] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:41] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:41] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:41] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:42] Post page accessed with identifier: 
+[2025-04-20 06:06:42] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:42] Starting get_homepage_sections() call
+[2025-04-20 06:06:42] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:42] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:42] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:42] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:42] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:42] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:42] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:42] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:43] Post page accessed with identifier: 
+[2025-04-20 06:06:43] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:43] Starting get_homepage_sections() call
+[2025-04-20 06:06:43] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:43] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:43] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:43] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:43] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:43] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:43] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:43] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:44] Post page accessed with identifier: 
+[2025-04-20 06:06:44] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:44] Starting get_homepage_sections() call
+[2025-04-20 06:06:44] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:44] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:44] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:44] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:44] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:44] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:44] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:44] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:45] Post page accessed with identifier: 
+[2025-04-20 06:06:45] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:45] Starting get_homepage_sections() call
+[2025-04-20 06:06:45] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:45] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:45] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:45] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:45] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:45] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:45] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:45] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:46] Post page accessed with identifier: 
+[2025-04-20 06:06:46] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:46] Starting get_homepage_sections() call
+[2025-04-20 06:06:46] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:46] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:46] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:46] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:46] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:46] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:46] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:46] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:46] Starting get_homepage_sections() call
+[2025-04-20 06:06:46] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:46] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:46] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:46] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:46] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:46] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:46] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:46] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:48] Post page accessed with identifier: 
+[2025-04-20 06:06:48] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:48] Starting get_homepage_sections() call
+[2025-04-20 06:06:48] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:48] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:48] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:48] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:48] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:48] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:48] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:48] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:48] Post page accessed with identifier: 
+[2025-04-20 06:06:48] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:49] Starting get_homepage_sections() call
+[2025-04-20 06:06:49] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:49] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:49] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:49] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:49] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:49] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:49] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:49] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:49] Post page accessed with identifier: 
+[2025-04-20 06:06:49] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:49] Starting get_homepage_sections() call
+[2025-04-20 06:06:49] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:49] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:49] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:49] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:49] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:49] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:49] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:49] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:50] Post page accessed with identifier: 
+[2025-04-20 06:06:50] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:50] Starting get_homepage_sections() call
+[2025-04-20 06:06:50] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:50] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:50] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:50] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:50] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:50] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:50] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:50] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:50] Post page accessed with identifier: 
+[2025-04-20 06:06:50] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:51] Starting get_homepage_sections() call
+[2025-04-20 06:06:51] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:51] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:51] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:51] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:51] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:51] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:51] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:51] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:52] Post page accessed with identifier: 
+[2025-04-20 06:06:52] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:52] Starting get_homepage_sections() call
+[2025-04-20 06:06:52] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:52] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:52] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:52] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:52] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:52] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:52] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:52] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:58] Post page accessed with identifier: 
+[2025-04-20 06:06:58] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:58] Starting get_homepage_sections() call
+[2025-04-20 06:06:58] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:58] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:58] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:58] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:58] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:58] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:58] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:58] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:59] Post page accessed with identifier: 
+[2025-04-20 06:06:59] No identifier provided, redirecting to homepage
+[2025-04-20 06:06:59] Starting get_homepage_sections() call
+[2025-04-20 06:06:59] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:06:59] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:06:59] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:06:59] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:06:59] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:06:59] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:06:59] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:06:59] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:00] Post page accessed with identifier: 
+[2025-04-20 06:07:00] No identifier provided, redirecting to homepage
+[2025-04-20 06:07:00] Starting get_homepage_sections() call
+[2025-04-20 06:07:00] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:07:00] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:07:00] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:07:00] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:07:00] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:07:00] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:07:00] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:00] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:00] Post page accessed with identifier: 
+[2025-04-20 06:07:00] No identifier provided, redirecting to homepage
+[2025-04-20 06:07:00] Starting get_homepage_sections() call
+[2025-04-20 06:07:00] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:07:00] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:07:00] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:07:00] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:07:00] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:07:00] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:07:00] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:00] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:01] Post page accessed with identifier: 
+[2025-04-20 06:07:01] No identifier provided, redirecting to homepage
+[2025-04-20 06:07:01] Starting get_homepage_sections() call
+[2025-04-20 06:07:01] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:07:01] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:07:01] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:07:01] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:07:01] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:07:01] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:07:01] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:01] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:01] Post page accessed with identifier: 
+[2025-04-20 06:07:01] No identifier provided, redirecting to homepage
+[2025-04-20 06:07:02] Starting get_homepage_sections() call
+[2025-04-20 06:07:02] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:07:02] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:07:02] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:07:02] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:07:02] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:07:02] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:07:02] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:02] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:02] Post page accessed with identifier: 
+[2025-04-20 06:07:02] No identifier provided, redirecting to homepage
+[2025-04-20 06:07:03] Starting get_homepage_sections() call
+[2025-04-20 06:07:03] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:07:03] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:07:03] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:07:03] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:07:03] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:07:03] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:07:03] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:03] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:03] Post page accessed with identifier: 
+[2025-04-20 06:07:03] No identifier provided, redirecting to homepage
+[2025-04-20 06:07:03] Starting get_homepage_sections() call
+[2025-04-20 06:07:03] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:07:03] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:07:03] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:07:03] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:07:03] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:07:03] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:07:03] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:07:03] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:09:32] Starting get_homepage_sections() call
+[2025-04-20 06:09:32] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:09:32] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:09:32] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:09:32] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:09:32] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:09:32] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:09:32] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:09:32] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:09:34] Starting get_homepage_sections() call
+[2025-04-20 06:09:34] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:09:34] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:09:34] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:09:34] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:09:34] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:09:34] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:09:34] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:09:34] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:09:36] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:36] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:36] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:36] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:39] Starting get_homepage_sections() call
+[2025-04-20 06:09:39] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:09:39] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:09:39] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:09:39] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:09:39] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:09:39] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:09:39] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:09:39] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:09:40] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:40] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:40] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:40] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:44] Starting get_homepage_sections() call
+[2025-04-20 06:09:44] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:09:44] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:09:44] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:09:44] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:09:44] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:09:44] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:09:44] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:09:44] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:09:46] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:46] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:46] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:09:46] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:16] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:16] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:16] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:16] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:17] Starting get_homepage_sections() call
+[2025-04-20 06:10:17] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:10:17] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:10:17] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:10:17] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:10:17] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:10:17] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:10:17] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:10:17] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:10:19] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:19] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:19] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:19] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:44] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:44] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:44] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:10:44] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:06] Starting get_homepage_sections() call
+[2025-04-20 06:11:06] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:11:06] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:11:06] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:11:06] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:11:06] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:11:06] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:11:06] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:11:06] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:11:11] Starting get_homepage_sections() call
+[2025-04-20 06:11:11] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:11:11] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:11:11] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:11:11] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:11:11] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:11:11] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:11:11] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:11:11] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:11:13] Starting get_homepage_sections() call
+[2025-04-20 06:11:13] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:11:13] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:11:13] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:11:13] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:11:13] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:11:13] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:11:13] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:11:13] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:11:14] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:14] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:14] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:14] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:49] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:49] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:49] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:49] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:50] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:50] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:50] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:50] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:50] Starting get_homepage_sections() call
+[2025-04-20 06:11:50] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:11:50] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:11:50] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:11:50] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:11:50] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:11:50] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:11:50] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:11:50] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:11:52] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:52] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:52] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:11:52] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:12:09] Starting get_homepage_sections() call
+[2025-04-20 06:12:09] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:12:09] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:12:09] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:12:09] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:12:09] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:12:09] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:12:09] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:12:09] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:12:10] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:12:10] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:12:10] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:12:10] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:17:20] Starting get_homepage_sections() call
+[2025-04-20 06:17:20] Executing query: SELECT * FROM homepage_sections WHERE is_active = 1 ORDER BY order_index ASC
+[2025-04-20 06:17:20] Retrieved sections: Array
+(
+    [0] => Array
+        (
+            [id] => 1
+            [title] => Laptops
+            [section_type] => category
+            [categories] => ["5"]
+            [layout_type] => grid
+            [posts_count] => 12
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:32:32
+        )
+
+    [1] => Array
+        (
+            [id] => 2
+            [title] => Featured Posts
+            [section_type] => featured
+            [categories] => []
+            [layout_type] => carousel
+            [posts_count] => 9
+            [order_index] => 0
+            [is_active] => 1
+            [created_at] => 2025-04-20 05:33:03
+        )
+
+)
+
+[2025-04-20 06:17:20] Starting get_section_posts() for section: Array
+(
+    [id] => 1
+    [title] => Laptops
+    [section_type] => category
+    [categories] => ["5"]
+    [layout_type] => grid
+    [posts_count] => 12
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:32:32
+)
+
+[2025-04-20 06:17:20] Retrieved posts for section: Array
+(
+    [section_id] => 1
+    [post_count] => 0
+)
+
+[2025-04-20 06:17:20] Starting get_section_posts() for section: Array
+(
+    [id] => 2
+    [title] => Featured Posts
+    [section_type] => featured
+    [categories] => []
+    [layout_type] => carousel
+    [posts_count] => 9
+    [order_index] => 0
+    [is_active] => 1
+    [created_at] => 2025-04-20 05:33:03
+)
+
+[2025-04-20 06:17:20] Retrieved posts for section: Array
+(
+    [section_id] => 2
+    [post_count] => 1
+)
+
+[2025-04-20 06:17:20] Post image URL: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:17:20] Displaying image: /uploads/post_68048cba1ba643.40345203.png
+[2025-04-20 06:17:21] Post page accessed with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:17:21] Attempting to get post with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:17:21] No post found with identifier: how-streaming-is-revolutionizing-the-entertainment-industry
+[2025-04-20 06:17:21] No post found for identifier: how-streaming-is-revolutionizing-the-entertainment-industry
