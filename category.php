@@ -2,6 +2,7 @@
 include 'config.php';
 include 'includes/functions.php';
 
+
 $category_ids = isset($_GET['id']) ? explode(',', $_GET['id']) : [];
 $categories = [];
 $posts = [];
@@ -16,8 +17,6 @@ if (!empty($category_ids)) {
     }
 }
 
-<?php
-include 'path/to/your/function_file.php'; // Adjust the path according to where your functions are stored
 
 
 // Remove duplicate posts
