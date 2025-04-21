@@ -2,11 +2,15 @@
 include 'config.php';
 include 'includes/functions.php';
 
-// Get slug from URL path
-$uri_parts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-$slug = '';
-if (count($uri_parts) >= 2 && $uri_parts[0] === 'post') {
-    $slug = urldecode(trim($uri_parts[1]));
+// Get slug from URL
+$slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
+
+// If no slug provided, extract it from the URL path
+if (empty($slug)) {
+    $uri_parts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
+    if (count($uri_parts) >= 2 && $uri_parts[0] === 'post') {
+        $slug = trim($uri_parts[1]);
+    }
 }
 
 try {
@@ -368,22 +372,26 @@ try {
                 url: '/ajax/add_comment.php',
                 type: 'POST',
                 data: $(this).serialize(),
-                dataType: 'json',
+                dataType: 'json', // Explicitly set dataType to json
                 success: function(response) {
                     if (response.success) {
+                        // Add the new comment to the list
                         $('#commentsList').prepend(
                             '<div class="bg-gray-50 p-4 rounded-lg mb-4">' +
                             '<div class="flex justify-between items-center mb-2">' +
                             '<span class="font-bold">' + response.comment.name + '</span>' +
                             '<span class="text-sm text-gray-500">' + response.comment.created_at + '</span>' +
                             '</div>' +
-                            '<p>' + response.comment.content + '</p>' +
+                            '<p>' + response.comment.content + '</p>' + // Use pre-formatted content
                             '</div>'
                         );
+                        // Clear the form
                         $('#commentForm')[0].reset();
+                        // Update comment count
                         var currentCount = parseInt($('.comment-count').text().split(' ')[0]);
                         $('.comment-count').text((currentCount + 1) + ' comments');
                     } else {
+                        console.error('Error adding comment:', response.message);
                         alert('Error: ' + response.message);
                     }
                 },
@@ -397,9 +405,13 @@ try {
     </script>
 </body>
 </html>
+
 <?php
 } catch (Exception $e) {
+    // Log the error
     error_log("Error in post.php: " . $e->getMessage());
+    
+    // Show 404 page
     header("HTTP/1.0 404 Not Found");
     include '404.php';
     exit;
