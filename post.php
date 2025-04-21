@@ -2,15 +2,11 @@
 include 'config.php';
 include 'includes/functions.php';
 
-// Get slug from URL
-$slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
-
-// If no slug provided, extract it from the URL path
-if (empty($slug)) {
-    $uri_parts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
-    if (count($uri_parts) >= 2 && $uri_parts[0] === 'post') {
-        $slug = trim($uri_parts[1]);
-    }
+// Get slug from URL path
+$uri_parts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
+$slug = '';
+if (count($uri_parts) >= 2 && $uri_parts[0] === 'post') {
+    $slug = urldecode(trim($uri_parts[1]));
 }
 
 try {
@@ -136,11 +132,11 @@ try {
 
 
 <?php
-// Remove extraction of "id" and only grab the slug from the query string
-$slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
+// Extract ID and slug from query string
+$post_id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
+$slug = isset($_GET['slug']) ? $_GET['slug'] : '';
 
-// If no slug is provided then error out
-if (empty($slug)) {
+if (!$post_id || !$slug) {
     http_response_code(404);
     include '404.php';
     exit;
@@ -150,15 +146,25 @@ include 'config.php';
 include 'includes/functions.php';
 
 try {
+    // Get identifier from URL - could be either slug or ID
+    $identifier = isset($_GET['slug']) ? $_GET['slug'] : (isset($_GET['id']) ? $_GET['id'] : '');
+
     // Debug logging
-    debug_log('Post page accessed with slug: ' . $slug);
+    debug_log('Post page accessed with identifier: ' . $identifier);
 
-    // Get the post using the slug
-    $post = get_post_by_slug($slug);
+    // If no identifier provided, redirect to homepage
+    if (empty($identifier)) {
+        debug_log('No identifier provided, redirecting to homepage');
+        header('Location: /');
+        exit;
+    }
 
-    // Debug logging and error handling
+    // Get the post
+    $post = get_post_by_slug($identifier);
+
+    // Debug logging
     if (!$post) {
-        debug_log('No post found for slug: ' . $slug);
+        debug_log('No post found for identifier: ' . $identifier);
         throw new Exception('Post not found');
     }
 
@@ -191,6 +197,7 @@ try {
 
     include 'includes/header.php';
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -361,10 +368,9 @@ try {
                 url: '/ajax/add_comment.php',
                 type: 'POST',
                 data: $(this).serialize(),
-                dataType: 'json', // Explicitly set dataType to json
+                dataType: 'json',
                 success: function(response) {
                     if (response.success) {
-                        // Add the new comment to the list
                         $('#commentsList').prepend(
                             '<div class="bg-gray-50 p-4 rounded-lg mb-4">' +
                             '<div class="flex justify-between items-center mb-2">' +
@@ -374,18 +380,15 @@ try {
                             '<p>' + response.comment.content + '</p>' +
                             '</div>'
                         );
-                        // Clear the form
                         $('#commentForm')[0].reset();
-                        // Update comment count
                         var currentCount = parseInt($('.comment-count').text().split(' ')[0]);
                         $('.comment-count').text((currentCount + 1) + ' comments');
                     } else {
-                        console.error('Error adding comment:', response.message);
                         alert('Error: ' + response.message);
                     }
                 },
                 error: function(xhr, status, error) {
-                    console.error('AJAX error:', xhr.responseText);
+                    console.error('AJAX error:', xhr.responseText); // Log the full error response
                     alert('An error occurred while submitting the comment. Please check the console for details.');
                 }
             });
@@ -394,13 +397,9 @@ try {
     </script>
 </body>
 </html>
-
 <?php
 } catch (Exception $e) {
-    // Log the error
     error_log("Error in post.php: " . $e->getMessage());
-    
-    // Show 404 page
     header("HTTP/1.0 404 Not Found");
     include '404.php';
     exit;
