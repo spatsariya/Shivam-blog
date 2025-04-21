@@ -1,9 +1,146 @@
 <?php
-// Remove extraction of "id" and only grab the slug from the query string
+include 'config.php';
+include 'includes/functions.php';
+
+// Get slug from URL
 $slug = isset($_GET['slug']) ? trim($_GET['slug']) : '';
 
-// If no slug is provided then error out
+// If no slug provided, extract it from the URL path
 if (empty($slug)) {
+    $uri_parts = explode('/', trim($_SERVER['REQUEST_URI'], '/'));
+    if (count($uri_parts) >= 2 && $uri_parts[0] === 'post') {
+        $slug = trim($uri_parts[1]);
+    }
+}
+
+try {
+    if (empty($slug)) {
+        throw new Exception('No slug provided');
+    }
+
+    // Get the post by slug
+    $post = get_post_by_slug($slug);
+    
+    if (!$post) {
+        throw new Exception('Post not found');
+    }
+
+    // Increment view count
+    increment_post_view_count($post['id']);
+
+    // Get post metadata
+    $post_categories = get_post_categories($post['id']);
+    $post_image = get_post_image($post);
+
+    // Get engagement counts
+    $engagement = get_post_engagement_counts($post['id']);
+    $post['view_count'] = $engagement['view_count'];
+    $post['like_count'] = $engagement['like_count'];
+    $post['comment_count'] = $engagement['comment_count'];
+
+    // Get next/previous posts
+    $next_post = get_adjacent_post($post['id'], 'next');
+    $prev_post = get_adjacent_post($post['id'], 'prev');
+
+    // Set meta tags
+    $page_title = !empty($post['meta_title']) ? $post['meta_title'] : $post['title'];
+    $page_description = !empty($post['meta_description']) ? $post['meta_description'] : get_excerpt($post['content'], 160);
+
+    // Get comments
+    $comments = get_post_comments($post['id']);
+
+    include 'includes/header.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?php echo htmlspecialchars($page_title); ?></title>
+    <meta name="description" content="<?php echo htmlspecialchars($page_description); ?>">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body class="bg-gray-50">
+    <main class="container mx-auto px-4 py-8">
+        <article class="max-w-4xl mx-auto bg-white rounded-lg shadow-lg overflow-hidden">
+            <?php if ($post_image): ?>
+            <div class="relative h-96 w-full">
+                <img src="<?php echo htmlspecialchars($post_image); ?>" 
+                     alt="<?php echo htmlspecialchars($post['title']); ?>"
+                     class="w-full h-full object-cover">
+            </div>
+            <?php endif; ?>
+
+            <div class="p-8">
+                <!-- Categories -->
+                <?php if (!empty($post_categories)): ?>
+                <div class="flex flex-wrap gap-2 mb-4">
+                    <?php foreach ($post_categories as $category): ?>
+                    <a href="/category/<?php echo $category['id']; ?>" 
+                       class="text-xs font-semibold bg-purple-100 text-purple-600 px-2 py-1 rounded-full">
+                        <?php echo htmlspecialchars($category['name']); ?>
+                    </a>
+                    <?php endforeach; ?>
+                </div>
+                <?php endif; ?>
+
+                <!-- Title -->
+                <h1 class="text-4xl font-bold mb-4"><?php echo htmlspecialchars($post['title']); ?></h1>
+
+                <!-- Metadata -->
+                <div class="flex items-center gap-4 text-sm text-gray-600 mb-8">
+                    <time datetime="<?php echo $post['created_at']; ?>">
+                        <?php echo date('F j, Y', strtotime($post['created_at'])); ?>
+                    </time>
+                    <span><?php echo number_format($post['view_count']); ?> views</span>
+                    <span id="like-count"><?php echo number_format($post['like_count']); ?> likes</span>
+                </div>
+
+                <!-- Content -->
+                <div class="prose max-w-none mb-8">
+                    <?php echo $post['content']; ?>
+                </div>
+
+                <!-- Comments section and rest of your existing post.php content -->
+                <?php include 'includes/comments.php'; ?>
+            </div>
+        </article>
+    </main>
+
+    <?php include 'includes/footer.php'; ?>
+
+    <script>
+    $(document).ready(function() {
+        // Your existing JavaScript for likes, comments, etc.
+    });
+    </script>
+</body>
+</html>
+
+<?php
+} catch (Exception $e) {
+    error_log("Error in post.php: " . $e->getMessage());
+    header("HTTP/1.0 404 Not Found");
+    include '404.php';
+    exit;
+}
+?>
+
+
+
+
+
+
+
+
+
+<?php
+// Extract ID and slug from query string
+$post_id = isset($_GET['id']) ? (int) $_GET['id'] : 0;
+$slug = isset($_GET['slug']) ? $_GET['slug'] : '';
+
+if (!$post_id || !$slug) {
     http_response_code(404);
     include '404.php';
     exit;
