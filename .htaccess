@@ -9,3 +9,5 @@ RewriteRule ^category/([0-9]+)$ category.php?id=$1 [L,QSA]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php [QSA,L]
+
+RewriteRule ^post/([^/]+)/?$ post.php?slug=$1 [L,QSA]
