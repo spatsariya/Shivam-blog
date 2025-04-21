@@ -181,15 +181,7 @@ function get_post_by_slug($identifier) {
     debug_log("Attempting to get post with identifier: " . $identifier);
     
     // First try to get by slug
-    $sql = "SELECT p.*, 
-            COALESCE(p.featured_image, '') as featured_image,
-            COALESCE(p.view_count, 0) as view_count,
-            COALESCE(p.like_count, 0) as like_count,
-            COALESCE(p.comment_count, 0) as comment_count
-            FROM posts p 
-            WHERE p.slug = ?";
-    
-    $stmt = $conn->prepare($sql);
+    $stmt = $conn->prepare("SELECT * FROM posts WHERE slug = ?");
     $stmt->bind_param("s", $identifier);
     $stmt->execute();
     $result = $stmt->get_result();
@@ -197,13 +189,7 @@ function get_post_by_slug($identifier) {
     
     // If not found by slug and identifier is numeric, try by ID
     if (!$post && is_numeric($identifier)) {
-        $stmt = $conn->prepare($sql = "SELECT p.*, 
-            COALESCE(p.featured_image, '') as featured_image,
-            COALESCE(p.view_count, 0) as view_count,
-            COALESCE(p.like_count, 0) as like_count,
-            COALESCE(p.comment_count, 0) as comment_count
-            FROM posts p 
-            WHERE p.id = ?");
+        $stmt = $conn->prepare("SELECT * FROM posts WHERE id = ?");
         $stmt->bind_param("i", $identifier);
         $stmt->execute();
         $result = $stmt->get_result();
@@ -753,21 +739,37 @@ function delete_section($section_id) {
 function get_post_image($post) {
     // Check if post has a featured image
     if (!empty($post['featured_image'])) {
-        // Ensure the path starts with a forward slash and remove any potential double slashes
-        $image_path = '/' . ltrim($post['featured_image'], '/');
-        // Get the base URL
-        $base_url = (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http") . "://$_SERVER[HTTP_HOST]";
-        return $base_url . $image_path;
+        // Ensure the path starts with a forward slash
+        return '/' . ltrim($post['featured_image'], '/');
     }
     
-    // If no featured image, try to get the first image from the content
-    preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $post['content'], $image);
-    if (isset($image['src'])) {
-        return $image['src'];
-    }
-    
+    // Return null if no image is found
     return null;
 }
+
+
+// function get_post_image($post) {
+//     debug_log('Getting image for post', ['post_id' => $post['id'], 'title' => $post['title']]);
+    
+//     if (!empty($post['featured_image'])) {
+//         debug_log('Found featured image', $post['featured_image']);
+//         $image_url = get_image_url($post['featured_image']);
+//         debug_log('Processed featured image URL', $image_url);
+//         return $image_url;
+//     }
+    
+//     // If no featured image, try to get the first image from the content
+//     preg_match('/<img.+src=[\'"](?P<src>.+?)[\'"].*>/i', $post['content'], $image);
+//     if (isset($image['src'])) {
+//         debug_log('Found image in content', $image['src']);
+//         $image_url = get_image_url($image['src']);
+//         debug_log('Processed content image URL', $image_url);
+//         return $image_url;
+//     }
+    
+//     debug_log('No image found for post', ['post_id' => $post['id']]);
+//     return '';
+// }
 
 function get_image_url($image_path) {
     debug_log('Getting image URL for', $image_path);
