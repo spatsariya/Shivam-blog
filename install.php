@@ -12,6 +12,8 @@ if (file_exists('config.php')) {
     die('The blog is already installed. Delete config.php to reinstall.');
 }
 
+
+
 $step = isset($_GET['step']) ? (int)$_GET['step'] : 1;
 
 function display_header($title) {
