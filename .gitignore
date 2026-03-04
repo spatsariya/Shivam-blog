@@ -1,0 +1,25 @@
+# Configuration files with sensitive data
+config.php
+config_old.php
+
+# Uploaded files
+uploads/*
+!uploads/.gitkeep
+
+# Log files
+logs/*
+!logs/.gitkeep
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# PHP
+phpinfo.php
